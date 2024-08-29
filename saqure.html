@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>squre</title>
+</head>
+<body> 
+    <form>
+        <input id="num" type="number" >
+        <button type="button" id="sq" onclick="square()">square</button>
+        <button type="button" id="qu" onclick="cube()">cube</button>
+        <button type="button" id="clr" onclick="clr()">clear</button>
+        <p id="ans"></p>
+    </form>
+
+    <script>
+        function square(){
+            var a=document.getElementById("num").value;
+            document.getElementById("ans").innerHTML=a*a;
+        }
+
+        function cube(){
+            var b=document.getElementById("num").value;
+            document.getElementById("ans").innerHTML=b*b*b;
+        }
+        function clr(){
+            document.getElementById("num").value=" ";
+            document.getElementById("ans").innerHTML=" ";
+        }
+    </script> 
+    
+    <script>
+        
+    </script>
+</body>
+</html>
